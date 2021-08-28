@@ -1,0 +1,67 @@
+[core]
+	autocrlf = input
+    editor = nvim
+	filemode = false
+[user]
+	name = Christopher Bocardo
+    email = ccb012100@users.noreply.github.com
+[commit]
+	gpgsign = false
+[color]
+    ui = true
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+[color "diff"]
+    meta = yellow
+    frag = magenta bold
+    commit = yellow bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+[pull]
+	ff = only
+[alias]
+    acm = ! git add -A && git commit -m
+    alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+    amend = commit -a --amend
+    cm = commit -m
+    a = add
+    b = branch
+    br = branch --remote
+    cb = checkout -B
+    co = checkout
+    d = diff
+    l = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
+    main = checkout main
+    master = checkout master
+    pub = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+    ruo = remote update origin --prune # update local list of remote branches
+    s = status
+    # resets the previous commit but
+    # keep all the changes from that commit in the working directory
+    undo = reset HEAD~1 --mixed
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[gpg]
+	program = gpg
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+[delta]
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Dracula
+    navigate = true
+[interactive]
+    diffFilter = delta --color-onlyx
