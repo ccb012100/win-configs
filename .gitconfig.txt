@@ -1,59 +1,56 @@
+[merge]
+	tool = kdiff3
+[diff]
+	guitool = kdiff3
 [core]
-        autocrlf = true
-        editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin
-        pager = diff-so-fancy | less --tabs=4 -RFX
-[credential]
-        helper = manager
+	editor = \"C:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+	autocrlf = input
+	filemode = false
 [user]
-        name = Christopher Bocardo
-[color]
-        branch = auto
-        diff = auto
-        interactive = auto
-        status = auto
-        grep = auto
-        ui = true
-[alias]
-        l = log --all --decorate --oneline --graph -n 25
-        st = status
-        stat = status
-        br = branch
-        ch = checkout
-        check = checkout
-        checkoug = checkout
-        co = commit
-        cm = commit -m
-        a = add
-[fetch]
-        prune = true
+	name = Christopher Bocardo
+	email = ccb012100@users.noreply.github.com
+	signingkey = 93722A3AD155A73F
 [pull]
-        rebase = true
-[color "diff-highlight"]
-        oldNormal = red bold
-        oldHighlight = red bold 52
-        newNormal = green bold
-        newHighlight = green bold 22
-[color "diff"]
-        meta = yellow
-        frag = magenta bold
-        commit = yellow bold
-        old = red bold
-        new = green bold
-        whitespace = red reverse
-[color "status"]
-        added = cyan
-        branch = cyan
-        changed = magenta
-        deleted = red
-        untracked = yellow
-[color "branch"]
-        current = cyan
-        local = green
-        remote = red
-[filter "lfs"]
-        clean = git-lfs clean -- %f
-        smudge = git-lfs smudge -- %f
-        process = git-lfs filter-process
-        required = true
+	ff = only
+[fetch]
+	prune = false
 [rebase]
-        autoStash = false
+	autoStash = false
+[alias]
+	acm = ! git add -A && git commit -m
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+	amend = commit -a --amend
+	cm = commit -m
+	a = add
+	b = branch
+	br = branch --remote
+	cb = checkout -B
+	co = checkout
+	d = diff
+	l = log --pretty='format:%C(yellow)%h %C(magenta)%as %C(blue)%aL %C(cyan)%s%C(reset)'
+	main = checkout main
+	master = checkout master
+	pub = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
+	ruo = remote update origin --prune # update local list of remote branches
+	s = status
+    # resets the previous commit but
+    # keep all the changes from that commit in the working directory
+	undo = reset HEAD~1 --mixed
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[commit]
+	gpgsign = true
+[gpg]
+	program = C:/Program Files/Git/usr/bin/gpg.exe
