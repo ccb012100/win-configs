@@ -1,6 +1,6 @@
 <NotepadPlus>
     <InternalCommands>
-        <Shortcut id="41003" Ctrl="yes" Alt="no" Shift="no" Key="81" />
+        <Shortcut id="41003" Ctrl="yes" Alt="no" Shift="no" Key="87" />
         <Shortcut id="42022" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="41001" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="41002" Ctrl="no" Alt="no" Shift="no" Key="0" />
@@ -10,13 +10,14 @@
         <Shortcut id="42012" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="42013" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <Shortcut id="43003" Ctrl="no" Alt="no" Shift="no" Key="0" />
+        <Shortcut id="42068" Ctrl="no" Alt="no" Shift="no" Key="0" />
+        <Shortcut id="42069" Ctrl="no" Alt="no" Shift="no" Key="0" />
+        <Shortcut id="42070" Ctrl="no" Alt="no" Shift="no" Key="0" />
+        <Shortcut id="42035" Ctrl="no" Alt="no" Shift="no" Key="0" />
+        <Shortcut id="43001" Ctrl="yes" Alt="no" Shift="no" Key="82" />
+        <Shortcut id="41014" Ctrl="no" Alt="no" Shift="no" Key="0" />
     </InternalCommands>
-    <Macros>
-        <Macro name="Trim Trailing Space and Save" Ctrl="no" Alt="yes" Shift="yes" Key="83">
-            <Action type="2" message="0" wParam="42024" lParam="0" sParam="" />
-            <Action type="2" message="0" wParam="41006" lParam="0" sParam="" />
-        </Macro>
-    </Macros>
+    <Macros />
     <UserDefinedCommands>
         <Command name="Launch in Firefox" Ctrl="yes" Alt="yes" Shift="yes" Key="88">firefox &quot;$(FULL_CURRENT_PATH)&quot;</Command>
         <Command name="Launch in IE" Ctrl="yes" Alt="yes" Shift="yes" Key="73">iexplore &quot;$(FULL_CURRENT_PATH)&quot;</Command>
@@ -36,10 +37,10 @@
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="80" />
         </ScintKey>
         <ScintKey ScintID="2304" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="37">
-            <NextKey Ctrl="no" Alt="yes" Shift="no" Key="85" />
+            <NextKey Ctrl="yes" Alt="no" Shift="no" Key="74" />
         </ScintKey>
         <ScintKey ScintID="2306" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="39">
-            <NextKey Ctrl="no" Alt="yes" Shift="no" Key="73" />
+            <NextKey Ctrl="yes" Alt="no" Shift="no" Key="70" />
         </ScintKey>
         <ScintKey ScintID="2308" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="37">
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="85" />
@@ -47,10 +48,10 @@
         <ScintKey ScintID="2310" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="39">
             <NextKey Ctrl="yes" Alt="no" Shift="no" Key="73" />
         </ScintKey>
-        <ScintKey ScintID="2288" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="74" />
+        <ScintKey ScintID="2288" menuCmdID="0" Ctrl="no" Alt="no" Shift="no" Key="0" />
         <ScintKey ScintID="2338" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="76" />
         <ScintKey ScintID="2337" menuCmdID="0" Ctrl="yes" Alt="no" Shift="yes" Key="76" />
         <ScintKey ScintID="2312" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="79" />
-        <ScintKey ScintID="2314" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="72" />
+        <ScintKey ScintID="2314" menuCmdID="0" Ctrl="yes" Alt="no" Shift="no" Key="69" />
     </ScintillaKeys>
 </NotepadPlus>
